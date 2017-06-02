@@ -18,6 +18,10 @@ This section provides short, simple tutorials that let you quickly build an appl
 
 The following topics are available:
 
+* [Interactive C# Lessons](interactive-lessons/)
+
+    This series teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language. Each lesson is roughly 30 minutes in length. 
+
 * [Building a C# Hello World application with .NET Core in Visual Studio 2017](with-visual-studio.md)
 
    Visual Studio 2017, the latest release of Visual Studio, lets you code, compile, run, debug, profile, and publish your applications from a integrated development environment for Windows.
@@ -28,7 +32,7 @@ The following topics are available:
 
    A class library lets you define types and type members that can be called from another application. This topic lets you create a class library with a single method that determines whether a string begins with an uppercase character. Once you've finished building the library, you can develop a [unit test](testing-library-with-visual-studio.md) to ensure that it works as expected, and then you can make it available to [applications that want to consume it](consuming-library-with-visual-studio.md).
 
-- [Get started with Visual Studio Code](with-visual-studio-code.md)
+* [Get started with Visual Studio Code](with-visual-studio-code.md)
 
    Visual Studio Code is a free code editor optimized for building and debugging modern web and cloud applications. It supports IntelliSense and is available for Linux, macOS, and Windows.
 
