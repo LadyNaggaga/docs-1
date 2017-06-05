@@ -75,6 +75,7 @@ The `ToUpper` method returns a new string that is the all capital letters
 
 |Editable Code       |
 | ------------- |
+
 ```csharp
 string myName = "sage";
 Console.WriteLine(myName.ToUpper());
@@ -87,6 +88,7 @@ Console.WriteLine(myName.ToUpper());
 
 |Editable Code       |
 | ------------- |
+
 ```csharp
 string myName = "SAGE";
 //Hint Console.Writeline What?
@@ -96,8 +98,10 @@ string myName = "SAGE";
 |Will appear here|
 
 You can replace some characters in a string using the `Replace` method:
+
 |Editable Code       |
 | ------------- |
+
 ```csharp
 var sayHello = "Hello ";
 var sayGoodbye = sayHello.Replace("Hello","Goodbye");
@@ -110,6 +114,7 @@ Console.WriteLine(sayGoodbye);
 ## String interpolation
 
 You stick strings together using concatenation operator ` +` 
+
 |Editable Code       |
 | ------------- |
 ```csharp
@@ -144,8 +149,10 @@ the current date and time. That value is converted to text, and the
 text is substituted.
 
 **Challenge:**Try to use *string interpolation* on the code below
-| Editable Code | 
-| --- | --- |
+
+|Editable Code       |
+| ------------- |
+
 ```csharp
 string myName = "Sage ";
 var today = DateTime.Now; //Hint do we need this line?
