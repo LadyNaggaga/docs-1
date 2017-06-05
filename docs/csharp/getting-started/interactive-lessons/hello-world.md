@@ -11,213 +11,120 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ---
 
-# Hello world lesson
-
-You'll create your first C# program in this lesson. You'll learn the
-structure of a C# program and the common elements that are part of every
-C# program. You'll also learn the basic tools to manipulate text using
-the C# programming language.
-
-## Prerequisites
-
-This lesson has no prerequisites.
+# Welcome to C#
 
 ## Hello world
 
-
-
 ```csharp
-using System;
-
-namespace HelloWorld
-{
-    public class Program
-    {
-        public static void Main()
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}
+ Console.WriteLine("Hello World!");
 ```
-Click Show me 
-
-|Output |
+| [Output]()|
 | --- | --- |
 | Hello World !|
-Congratulations,
-you've run you're first C# program.
 
-## Understanding what you've created
- 
- This program, is made up of *statements*, *methods*, *classes*, and *namespaces*.
+Congratulations, you've run you're first C# program.
 
-### statements
-
-A *statement* is a line of code that does something.
-
-Let's start by writing an output to the browser/console
-
-For example change `Hello World!` to `Hello your name!`
- 
-| Editable Code |
-| ------------- | ------------- |
-| <pre lang ="csharp">Console.WriteLine(" Hello Maria!");</pre>|
-|Output |
-| Hello Maria !|
-This *statement* calls a *method* named `WriteLine`. *Methods* are one of the
-building blocks of C# programs. They are reusable blocks of code. In this
-instance, the `WriteLine` method writes text output. 
-
-
-### Methods
-A method is a block of code that a statement or a series of statements.
-
-```csharp
-public static void Main()
-{
-    Console.WriteLine("Hello World!");
-}
-```
-
-You've written a *method* in your hello world program. That method is
-named `Main`. Typically, the entry point to a C# program is a method
-with the name `Main`. When you run your program, the `Main` method
-executes. That calls the `WriteLine` method to write the text.
-
-The *body* of the method is the code between the `{` and `}`
-characters. In C#, curly braces define blocks of code, like
-the statements in a method.
-
-*make body section more interactive exercise*
-
-
-### Classes
-
-Methods are contained in *classes*. You wrote a class named `Program`:
-
-```csharp
-public class Program
-{
-    public static void Main()
-    {
-        Console.WriteLine("Hello World!");
-    }
-}
-```
-
-
-
-A *class* is defined using the `class` keyword, followed by the name. Preceding
-the `class` keyword is the `public` keyword, an *access modifier* that says this
-class can be used from any code. Like *methods* you place the members of a class
-inside curly braces. In this example, you have placed one method inside the
-`Program` class.
-
-### namespaces
-
-*Namespaces* are a way to organize code as programs grow larger. You
-might imagine that the larger a program gets, the more likely methods
-or classes might accidentally have the same name. *Namespaces* provide
-a further layer of organization. Here, you've placed all the code in
-the `HelloWorld` namespace:
-
-```csharp
-namespace HelloWorld
-```
-
-Notice those familiar curly braces that define all the code you've placed
-in the `HelloWorld` namespace.
-
-The first line of the program shows how you can use code from another
-*namespace*:
-
-```csharp
-using System;
-```
-
-A `using` statement says that you want to use classes and other types
-defined in that namespace. Here, you want to use the types from the
-`System` namespace. The `Console` class is defined in the `System`
-namespace.
-
-That's quite a few concepts for such a small program. Those concepts
-help organize larger programs that you'll build with as you learn more
-about the language. C# uses some of the same symbols and text for similar
-concepts in many areas of the language. As you learn, you'll see new uses
-for familiar symbols, making it easier to learn more quickly as you gain
-experience.
 
 ## Declaring variables
 
-Let's start modifying this program to do more for you. Instead of
-just "Hello World!", let's make it say your name. 
-
-
-
+Let's learn how to declare a variable.  Variables are declared using the `var` keyword.
+| Example on declaring variables | 
+| --- | --- |
 ```csharp
-string myName = "Bill Wagner";
-var sayHello = "Hello " + myName;
-Console.WriteLine(sayHello);
+var name = "Sage";
 ```
+**Using variables**
+Now, let's us  use the variables.   Instead of saying  Sage, say your name instead.
+| Editable Code | 
+| --- | --- |
+```csharp
+var name = "Maria";
+Console.WriteLine(name); 
+```
+| [Output]()|
+| --- | --- |
+| Hello Maria | 
 
-You've added a couple *variable declarations* in the code. The first line
-declares the `myName` variable. The type is a `string`, which is a sequence
-of text characters. The name `string` is used in many programming languages
-for storing text. This variable is initialized when it is declared.
+## Working with  `Strings` 
 
-The next line also declares a variable, `sayHello`. This variable is declared
-using the `var` keyword. It is also a `string`, even though it is declared
-using `var`. This is an *implicitly typed variable*. Its type is determined
-from the initial contents. The right side of the `=` is a string, so the
-type of `sayHello` is a string.
+A string is an object of type String whose value is text, and are contained in double quotation marks.
 
-This second assignment uses the familiar `+` symbol to concatenate `string`
-variables. Let's run the code and see how it works.
+**Creating and Using Strings**
+| Editable Code | 
+| --- | --- |
+```csharp
+string myName = "Sage"; //declares a string variable
+Console.WriteLine(myName);
+```
+| [Output]() |
+| --- | --- |
+| Sage | 
 
-## Working with the `String` class
 
-Let's do more with the `string` variables. These variables are *objects*
-of a *class*, the `String` class. The C# keyword `string` is a synonym
-for the `System.String` class. A *class* is a type, and an *object*
-represents an instance of that type. Each *class* defines useful methods
-that you can use to work with instances of that type.
+###String Methods
+ Let's explore a few of the methods defined in the `String` class. 
 
-Let's explore a few of the methods defined in the `String` class. Make
-changes to the code you've written so far by using the following members
-of the `String` class:
-
+**ToUpper**
 The `ToUpper` method returns a new string that is the all capital letters
-version of its parameter:
 
+| Editable Code | 
+| --- | --- |
 ```csharp
-var CAPITALS = sayHello.ToUpper();
+string myName = "sage";
+Console.WriteLine(myName.ToUpper());
 ```
+| [Out put ]()| 
+| --- | --- |
+|SAGE|
 
-Can you guess what would make a string all lower case? Try it.
+**Challenge**: Can you guess what would make a string all lower case? 
+| Editable Code | 
+| --- | --- |
+```csharp
+string myName = "SAGE";
+//Hint Console.Writeline What?
+```
+|[ Out put]() | 
+| --- | --- |
+|Will appear here|
 
 You can replace some characters in a string using the `Replace` method:
-
+| Editable Code | 
+| --- | --- |
 ```csharp
-var sayGoodbye = sayHello.Replace("Hello", "Goodbye");
+var sayHello = "Hello ";
+var sayGoodbye = sayHello.Replace("Hello","Goodbye");
+Console.WriteLine(sayGoodbye);
 ```
-
-Try a fefw of these options yourself.
+| [Out put]() | 
+| --- | --- |
+|Goodbye|
 
 ## String interpolation
 
-Let's finish this first lesson with *string interpolation*. Some of the
-most common activities for working with text are converting other variables
-to text, and substituting that text into a string. It's so common that C#
-built support into the language. Let's use it, and then explain how it works.
-
-Add the following code to your program:
-
+You stick strings together using concatenation operator ` +` 
+| Editable Code | 
+| --- | --- |
 ```csharp
+string myName = "Sage ";
+var today = DateTime.Now; 
+Console.WriteLine(myName +"started learning C# at "+ today);
+```
+And this would be the output  ` Sage started learning C# at 6/5/2017 10:02:20 PM`.
+
+ Using concatenation  works however, there is another way you can do this and it's called *string interpolation*. 
+ 
+| Editable Code | 
+| --- | --- |
+```csharp
+string myName = "Sage ";
 Console.WriteLine($"{myName} started learning C# on {DateTime.Now}");
 ```
+| Out put | 
+| --- | --- |
+|Sage started learning C# on 6/5/2017 8:50:51 PM|
 
-Run the code and see what happens.
+
 
 The `$` indicates that the text that follows is a *format string* for an
 *interpolated string*. In the format string, any text between `{` and `}`
@@ -229,27 +136,17 @@ uses another type, `DateTime`, and a property called `Now` that returns
 the current date and time. That value is converted to text, and the
 text is substituted.
 
-We really don't need the time, and it might be off by hours
-if you live in a different time zone from the server running your code.
-You can use *format strings* to control how the text is generated. The
-`DateTime` type uses the format string `D` to indicate that you only
-want the date displayed. You put the format string inside the curly braces.
-After the variable you want to display, add a `:` followed by the format
-string, `D`.
-
+**Challenge:**Try to use *string interpolation* on the code below
+| Editable Code | 
+| --- | --- |
 ```csharp
-Console.WriteLine($"{myName} started learning C# on {DateTime.Now:D}");
+string myName = "Sage ";
+var today = DateTime.Now; //Hint do we need this line?
+Console.WriteLine(myName +"started learning C#"+ today);
 ```
+| [Out put]() | 
+| --- | --- |
+|Sage started learning C#6/5/2017 8:58:00 PM|
 
-Run it again, and you should see the date, instead of the full date and
-time.
 
-## Review
 
-In this first lesson, you learned how C# programs are organized. You declare
-*namespaces* that organize types that work together. You declare *classes*
-that represent types and contain the code for your pgoram. You write *methods*
-in those classes that perform the work for your program.
-
-You explored one type, the `String` class, which is used to manipulate text.
-You built strings, replaced content, and learned about *string interpolation*.
