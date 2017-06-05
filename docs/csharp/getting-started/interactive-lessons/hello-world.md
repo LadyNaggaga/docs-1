@@ -24,7 +24,7 @@ This lesson has no prerequisites.
 
 ## Hello world
 
-Enter the following code into the code editor:
+
 
 ```csharp
 using System;
@@ -40,46 +40,38 @@ namespace HelloWorld
     }
 }
 ```
+Click Show me 
 
-Run this program, and you'll see the text `Hello World!`printed. Congratulations,
-you've written you're first C# program.
+|Output |
+| --- | --- |
+| Hello World !|
+Congratulations,
+you've run you're first C# program.
 
 ## Understanding what you've created
-
-Quite a few of the elements you'll use in every C# program are in this first
-sample. These elements form the structure of C# programs. Let's examine them
-before you move on to modifying this program. Rather than working line-by-line,
-let's examine the building blocks from the inside out. This program, like all
-programs, is made up of *statements*, *methods*, *classes*, and *namespaces*.
+ 
+ This program, is made up of *statements*, *methods*, *classes*, and *namespaces*.
 
 ### statements
 
 A *statement* is a line of code that does something.
-Let's look at the line that writes the output:
 
-```csharp
-Console.WriteLine("Hello World!");
-```
+Let's start by writing an output to the browser/console
 
+For example change `Hello World!` to `Hello your name!`
+ 
+| Editable Code |
+| ------------- | ------------- |
+| <pre lang ="csharp">Console.WriteLine(" Hello Maria!");</pre>|
+|Output |
+| Hello Maria !|
 This *statement* calls a *method* named `WriteLine`. *Methods* are one of the
 building blocks of C# programs. They are reusable blocks of code. In this
 instance, the `WriteLine` method writes text output. 
 
-Preceding the `WriteLine`, you see a *class* named `Console`. The `WriteLine`
-method is a member of the `Console` class. Methods in C# are members of
-a type, like a *class*.
-
-The text "Hello World!" is a *parameter* that is passed to that method.
-Methods take zero or more *parameters* that define information that will
-be used in the method. The `WriteLine` method takes a text parameter for
-the text that it will write.
-
-At the end of that line is a semicolon. C# statements must end
-with a semicolon.
 
 ### Methods
-
-Next, let's look at the code surrounding that one line:
+A method is a block of code that a statement or a series of statements.
 
 ```csharp
 public static void Main()
@@ -97,18 +89,8 @@ The *body* of the method is the code between the `{` and `}`
 characters. In C#, curly braces define blocks of code, like
 the statements in a method.
 
-The *method signature* is the line `public static void Main()`. It defines
-the name of the method, `Main`. The parentheses define the *parameters*
-for the method. There is no text between the parentheses because this
-method does not accept any parameters. The `public` keyword is an *access
-modifier*. In this example, the method is public, meaning it can be called
-from any code. In later lessons, you'll learn about limiting access to
-methods. The `static` keyword defines this method as a *static method*.
-Later lessons will expand on this topic. For now, let's just say that the
-main entry point must be a `static` method.
+*make body section more interactive exercise*
 
-Almost all of the code you write will be writing *methods*. Methods are
-blocks of code that perform specific actions.
 
 ### Classes
 
@@ -124,9 +106,7 @@ public class Program
 }
 ```
 
-You see more curly braces and similar keywords. The C# language
-uses similar structure so that as you learn the language, you'll
-learn symbols and concepts that make it easier to learn more of the language.
+
 
 A *class* is defined using the `class` keyword, followed by the name. Preceding
 the `class` keyword is the `public` keyword, an *access modifier* that says this
@@ -136,7 +116,7 @@ inside curly braces. In this example, you have placed one method inside the
 
 ### namespaces
 
-*Namespaces* are a way to organize code as programs grow largeer. You
+*Namespaces* are a way to organize code as programs grow larger. You
 might imagine that the larger a program gets, the more likely methods
 or classes might accidentally have the same name. *Namespaces* provide
 a further layer of organization. Here, you've placed all the code in
@@ -171,13 +151,9 @@ experience.
 ## Declaring variables
 
 Let's start modifying this program to do more for you. Instead of
-just "Hello World!", let's make it say your name. Replace this line:
+just "Hello World!", let's make it say your name. 
 
-```csharp
-Console.WriteLine("Hello World!");
-```
 
-with these lines, substituting your own name:
 
 ```csharp
 string myName = "Bill Wagner";
@@ -277,4 +253,3 @@ in those classes that perform the work for your program.
 
 You explored one type, the `String` class, which is used to manipulate text.
 You built strings, replaced content, and learned about *string interpolation*.
-
