@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
----
+z---
 
 # Welcome to C#
 
@@ -19,7 +19,7 @@ ms.devlang: csharp
  Console.WriteLine("Hello World!");
 ```
 
-|[Output]()        |
+ |[Output]()        |
 | ------------- |
 | Hello World !|
 
@@ -67,7 +67,7 @@ Console.WriteLine(myName);
 | Sage | 
 
 
-###String Methods
+### String Methods
  Let's explore a few of the methods defined in the `String` class. 
 
 **ToUpper**
