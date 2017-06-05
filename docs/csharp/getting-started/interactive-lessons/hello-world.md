@@ -148,7 +148,7 @@ uses another type, `DateTime`, and a property called `Now` that returns
 the current date and time. That value is converted to text, and the
 text is substituted.
 
-**Challenge:**Try to use *string interpolation* on the code below
+**Challenge:** Try to use *string interpolation* on the code below
 
 |Editable Code       |
 | ------------- |
