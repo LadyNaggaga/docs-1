@@ -18,8 +18,9 @@ ms.devlang: csharp
 ```csharp
  Console.WriteLine("Hello World!");
 ```
-| [Output]()|
-| --- | --- |
+
+|[Output]()        |
+| ------------- |
 | Hello World !|
 
 Congratulations, you've run you're first C# program.
@@ -28,21 +29,25 @@ Congratulations, you've run you're first C# program.
 ## Declaring variables
 
 Let's learn how to declare a variable.  Variables are declared using the `var` keyword.
-| Example on declaring variables | 
-| --- | --- |
+
+| Example on declaring variable      |
+| -------------                      |
 ```csharp
 var name = "Sage";
 ```
 **Using variables**
 Now, let's us  use the variables.   Instead of saying  Sage, say your name instead.
-| Editable Code | 
-| --- | --- |
+
+|Editable Code       |
+| ------------- |
+
 ```csharp
 var name = "Maria";
 Console.WriteLine(name); 
 ```
-| [Output]()|
-| --- | --- |
+
+|[Output]()        |
+| ------------- 
 | Hello Maria | 
 
 ## Working with  `Strings` 
