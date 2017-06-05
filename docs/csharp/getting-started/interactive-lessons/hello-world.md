@@ -47,7 +47,7 @@ Console.WriteLine(name);
 ```
 
 |[Output]()        |
-| ------------- 
+| ------------- |
 | Hello Maria | 
 
 ## Working with  `Strings` 
@@ -55,14 +55,15 @@ Console.WriteLine(name);
 A string is an object of type String whose value is text, and are contained in double quotation marks.
 
 **Creating and Using Strings**
-| Editable Code | 
-| --- | --- |
+
+|Editable Code       |
+| ------------- |
 ```csharp
 string myName = "Sage"; //declares a string variable
 Console.WriteLine(myName);
 ```
-| [Output]() |
-| --- | --- |
+|[Output]()        |
+| ------------- |
 | Sage | 
 
 
@@ -72,44 +73,45 @@ Console.WriteLine(myName);
 **ToUpper**
 The `ToUpper` method returns a new string that is the all capital letters
 
-| Editable Code | 
-| --- | --- |
+|Editable Code       |
+| ------------- |
 ```csharp
 string myName = "sage";
 Console.WriteLine(myName.ToUpper());
 ```
-| [Out put ]()| 
-| --- | --- |
+|[Output]()        |
+| ------------- |
 |SAGE|
 
 **Challenge**: Can you guess what would make a string all lower case? 
-| Editable Code | 
-| --- | --- |
+
+|Editable Code       |
+| ------------- |
 ```csharp
 string myName = "SAGE";
 //Hint Console.Writeline What?
 ```
-|[ Out put]() | 
-| --- | --- |
+|[Output]()        |
+| ------------- |
 |Will appear here|
 
 You can replace some characters in a string using the `Replace` method:
-| Editable Code | 
-| --- | --- |
+|Editable Code       |
+| ------------- |
 ```csharp
 var sayHello = "Hello ";
 var sayGoodbye = sayHello.Replace("Hello","Goodbye");
 Console.WriteLine(sayGoodbye);
 ```
-| [Out put]() | 
-| --- | --- |
+|[Output]()        |
+| ------------- |
 |Goodbye|
 
 ## String interpolation
 
 You stick strings together using concatenation operator ` +` 
-| Editable Code | 
-| --- | --- |
+|Editable Code       |
+| ------------- |
 ```csharp
 string myName = "Sage ";
 var today = DateTime.Now; 
@@ -119,14 +121,14 @@ And this would be the output  ` Sage started learning C# at 6/5/2017 10:02:20 PM
 
  Using concatenation  works however, there is another way you can do this and it's called *string interpolation*. 
  
-| Editable Code | 
-| --- | --- |
+|Editable Code       |
+| ------------- |
 ```csharp
 string myName = "Sage ";
 Console.WriteLine($"{myName} started learning C# on {DateTime.Now}");
 ```
-| Out put | 
-| --- | --- |
+|[Output]()        |
+| ------------- |
 |Sage started learning C# on 6/5/2017 8:50:51 PM|
 
 
@@ -149,8 +151,8 @@ string myName = "Sage ";
 var today = DateTime.Now; //Hint do we need this line?
 Console.WriteLine(myName +"started learning C#"+ today);
 ```
-| [Out put]() | 
-| --- | --- |
+|[Output]()        |
+| ------------- |
 |Sage started learning C#6/5/2017 8:58:00 PM|
 
 
